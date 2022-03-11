@@ -1,45 +1,40 @@
-/* Imports & supports */
-@import url("https://rsms.me/inter/inter.css");
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: "Inter var", sans-serif;
-  }
-}
-/* Reset & Base */
+/* Reset */
 *,
 *::before,
 *::after {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
+
 body,
 h1,
 h2,
 h3,
 h4,
+h5,
 p,
 figure,
 picture {
-  margin: 0
-}
-body {
-  line-height: 1;
-  min-height: 100vh
-}
-ul {
   margin: 0;
-  padding-inline: 0;
 }
-li {
-  list-style: none
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
 }
-a {
-  text-decoration: none
-}
+
 img,
 picture {
   max-width: 100%;
-  display: block
+  display: block;
 }
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -47,58 +42,22 @@ picture {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important
+    scroll-behaviour: auto !important;
   }
 }
-/* Variables */
-:root {
-   /*  --clr-dark: 230 35% 7%;
-  --clr-light: 231 77% 90%;
-  --clr-white: 0 0% 100%; */
-  /* tipografia */
-  --f-family: "Inter var", sans-serif;
-  --f-size: 16px;
-  --f-weight: 400;
 
-}
-/* Aplica estas variables a todos los elementos */
- * {
-  font-family: var(--f-family);
-  font-size: var(--f-size);
-  font-weight: var(--f-weight);
-}
+/* Base */
+div{}
+div h2{}
+div h3{}
+div p{}
+
+div{}
+div img{}
+
+
+/* Layout */
+
 /* Componentes */
+
 /* Utilidades */
-.flex {
-  display: flex
-}
-.grid {
-  display: grid
-}
-.contenedor {
-  width: 100vw;
-  margin-inline: 0
-}
-.banner {
-  --background: rgb(189, 187, 187);
-  padding: 1em;
-}
-
-h1 {
-  --f-size: 150px;
-  --f-weight: 9500;
-}
-h2 {
-  --f-size: 18px;
-  --f-weight: 600;
-}
-
-h3 {
-  --f-size: 16px;
-  --f-weight: 500;
-}
-
-h4 {
-  --f-size: 16px;
-  --f-weight: 500;
-}
